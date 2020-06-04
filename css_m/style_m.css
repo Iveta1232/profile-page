@@ -1,0 +1,240 @@
+body {
+max-width: 425px;
+height: 2754px;
+background: #CCCCCC;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 425px;
+  height: 380px;
+  background-image: url('../images_m/header_bg.png');
+  margin: 0 auto;
+}
+.nav-bar {
+  position: relative;
+  width: 425px;
+  height: 70px;
+}
+.logo {
+  display: inline-block;
+  width: 99px;
+  height: 22px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin: 24px 311px 24px 15px;
+  text-align: center;
+}
+.rectangle {
+  width: 425px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.4);
+}
+#menu {
+  display: inline;
+  float: right;
+  width: 22px;
+  height: 14px;
+  margin: -41px 25px 0 0;
+}
+#menu .one {
+  margin-top: 0;
+  vertical-align: top;
+}
+#menu .two {
+  margin-top: -6px;
+  vertical-align: top;
+}
+#menu .three {
+  margin-top: -30px;
+  vertical-align: top;
+}
+main {
+  width: 406px;
+  height: 2392px;
+  margin: -79px 9px -79px 10px;
+}
+.whiteBackground {
+  width: 406px;
+  height: 2313px;
+  margin-top: -79px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.profile {
+  position: relative;
+  top: -79px;
+  width: 375px;
+  height: 407px;
+  margin: -79px auto;
+  margin-bottom: 33px;
+}
+.avatar {
+  width: 160px;
+  height: 160px;
+  margin: 0 107px;
+}
+.username {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25.55px;
+  line-height: 30px;
+  color: #3C4858;
+  margin: 21px 75px;
+}
+.profession {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-top: 15px;
+  margin-left: 154px;
+  margin-bottom: 0;
+}
+.description {
+  width: 375px;
+  height: 119px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #999999;
+  margin-top: 45px;
+  margin-left: 0;
+}
+#icons {
+  width: 310px;
+  height: 104px;
+  margin-top: -79px;
+  margin-left: 51px;
+  margin-right: 47px;
+}
+.focused {
+  background: #9C27B0;
+  box-shadow: 0px 4px 20px rgba(156, 39, 176, 0.45);
+  border-radius: 4px;
+}
+.hidden {
+  display: hidden;
+}
+.smallIcon {
+  width: 30px;
+  height: 30px;
+  margin: 25px 35px 49px 35px;
+}
+.studio-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin: -34px 29px 14px 29px;
+}
+.image-set{
+  width: 100px;
+  height: 104px;
+  display: inline-block;
+}
+.image-set:hover{
+  background: #C8C8C8;
+}
+.work-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+  margin: -34px 33px 14px 33px;
+}
+.favorite-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+  margin: -34px 23px 14px 23px;
+}
+.photos {
+width: 378px;
+height: 1717px;
+margin-top: 51px;
+margin-right: 14px;
+margin-left: 14px;
+margin-bottom: 80px;
+}
+.photo1 {
+  width: 378px;
+  height: 281px;
+  border-radius: 6px;
+  margin-top: 0;
+}
+.photo2 {
+  width: 378px;
+  height: 565px;
+  border-radius: 6px;
+  margin-top: 26px;
+}
+.photo3 {
+  width: 377px;
+  height: 500px;
+  border-radius: 6px;
+  margin-top: 26px;
+}
+.photo4 {
+  width: 377px;
+  height: 281px;
+  border-radius: 6px;
+  margin-top: 26px;
+}
+footer {
+  width: 321px;
+  height: 62px;
+  margin: 33px 74px 27px 30px;
+}
+#footerLogo {
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+  margin-left: 0;
+}
+#footerLinks {
+  float: right;
+}
+#footerLinks a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  margin-left: 30px;
+}
+.information {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  color: #333333;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
