@@ -120,18 +120,37 @@ main {
   margin-left: 51px;
   margin-right: 47px;
 }
-.focused {
-  background: #9C27B0;
-  box-shadow: 0px 4px 20px rgba(156, 39, 176, 0.45);
+#icons a {
+  display: inline-block;
+  width: 100px;
+  height: 104px;
   border-radius: 4px;
+  background: white;
+  text-decoration: none;
+  margin: 0;
 }
-.hidden {
-  display: hidden;
+#icons  a:hover  {
+  background: rgba(200, 200, 200, 0.2);
+}
+#icons .active{
+  background: #9C27B0;
 }
 .smallIcon {
   width: 30px;
   height: 30px;
   margin: 25px 35px 49px 35px;
+}
+#studio .smallIcon {
+  background: url("../images_m/1icon.png");
+}
+#studio:hover .smallIcon {
+  background: url("../images_m/hover.png");
+}
+#work .smallIcon {
+  background: url("../images_m/2icon.png");
+}
+#favorite .smallIcon {
+  background: url("../images_m/3icon.png");
 }
 .studio-text {
   font-family: Roboto;
@@ -142,13 +161,13 @@ main {
   color: #FFFFFF;
   margin: -34px 29px 14px 29px;
 }
-.image-set{
-  width: 100px;
-  height: 104px;
-  display: inline-block;
-}
-.image-set:hover{
-  background: #C8C8C8;
+#studio:hover .studio-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
 }
 .work-text {
   font-family: Roboto;
@@ -168,7 +187,7 @@ main {
   color: #555555;
   margin: -34px 23px 14px 23px;
 }
-.photos {
+#photos {
 width: 378px;
 height: 1717px;
 margin-top: 51px;
@@ -181,24 +200,27 @@ margin-bottom: 80px;
   height: 281px;
   border-radius: 6px;
   margin-top: 0;
+  margin-bottom: 26px;
 }
 .photo2 {
   width: 378px;
   height: 565px;
   border-radius: 6px;
-  margin-top: 26px;
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 .photo3 {
   width: 377px;
   height: 500px;
   border-radius: 6px;
-  margin-top: 26px;
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 .photo4 {
   width: 377px;
   height: 281px;
   border-radius: 6px;
-  margin-top: 26px;
+  margin-top: 0;
 }
 footer {
   width: 321px;

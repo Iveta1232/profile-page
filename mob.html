@@ -36,38 +36,61 @@
                     groove structure.
                 </p>
           </div>
-          <nav id="icons">
-                <div class="image-set focused">
-                    <img class="smallIcon hidden" src="images_m/1icon.png" alt="icon1">
-                    <p class="studio-text">
-                        STUDIO
-                    </p>
-                </div>
-                <div class="image-set">
-                    <img class="smallIcon" src="images_m/2icon.png" alt="icon2">
-                    <p class="work-text">
-                        WORK
-                    </p>
-                </div>
-                <div class="image-set">
-                    <img class="smallIcon" src="images_m/3icon.png" alt="icon3">
-                    <p class="favorite-text">
-                        FAVORITE
-                    </p>
-                </div>
-          </nav>
-
-          <div class="photos">
-             <img class="photo1" src="images_m/photo1.png" alt="photo1">
-             <img class="photo2" src="images_m/photo2.png" alt="photo2">
-             <img class="photo3" src="images_m/photo3.png" alt="photo3">
-             <img class="photo4" src="images_m/photo4.png" alt="photo4">
+          <div id="icons">
+             <a href="#" id="studio" class="active" onclick="openGallery('Studio')">
+                 <div class="smallIcon">
+                 </div>
+                 <p class= "studio-text">
+                      STUDIO
+                 </p>
+             </a>
+             <a href="#"  id="work" onclick="openGallery('Work')">
+                 <div class="smallIcon">
+                 </div>
+                 <p class="work-text">
+                      WORK
+                 </p>
+             </a>
+             <a href="#" id="favorite" onclick="openGallery('Favorite')">
+                 <div class="smallIcon">
+                 </div>
+                 <p class="favorite-text">
+                      FAVORITE
+                 </p>
+             </a>
           </div>
+          <div id="photos">
+             <div id="Work" class="gallery">
+                <img class="photo1" src="images_m/photo1.png" alt="photo1">
+             </div>
+             <div id="Favorite" class="gallery">
+                <img class="photo2" src="images_m/photo2.png" alt="photo2">
+             </div>
+             <div id="Studio" class="gallery">
+                <img class="photo3" src="images_m/photo3.png" alt="photo3">
+                <img class="photo4" src="images_m/photo4.png" alt="photo4">
+             </div>
+          </div>
+          <script>
+            function openGallery(galleryName) {
+              var i;
+              var x = document.getElementsByClassName("gallery");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(galleryName).style.display = "block";
+               /* change photos */
+            document.getElementsByClassName("active")
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "img";
+              }
+            }
+          </script>
     </div>
 </main>
 
 <footer>
-    <a href="#" id="footerLogo">
+    <a href="mob.html" id="footerLogo">
         CREATIVE TIM
     </a>
     <nav id="footerLinks">
