@@ -35,22 +35,23 @@
                     groove structure.
                 </p>
           </div>
+
           <div id="icons">
-             <a href="#" id="studio" class="active" onclick="openGallery('Studio')">
+             <a href="#" id="buttomStudio" class="tab-buttons active" onclick="openGallery(event, 'Studio', 'buttomStudio')">
                  <div class="smallIcon">
                  </div>
                  <p class= "studio-text">
                       STUDIO
                  </p>
              </a>
-             <a href="#"  id="work" onclick="openGallery('Work')">
+             <a href="#"  id="buttomWork" class="tab-buttons" onclick="openGallery(event, 'Work', 'buttomWork')">
                  <div class="smallIcon">
                  </div>
                  <p class="work-text">
                       WORK
                  </p>
              </a>
-             <a href="#" id="favorite" onclick="openGallery('Favorite')">
+             <a href="#" id="buttomFavorite" class="tab-buttons" onclick="openGallery(event, 'Favorite', 'buttomFavorite')">
                  <div class="smallIcon">
                  </div>
                  <p class="favorite-text">
@@ -71,19 +72,23 @@
              </div>
           </div>
           <script>
-            function openGallery(galleryName) {
-              var i;
-              var x = document.getElementsByClassName("gallery");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(galleryName).style.display = "block";
-               /* change photos */
-            document.getElementsByClassName("active")
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "img";
-              }
-            }
+               function openGallery(event, galleryName, buttonName) {
+                    event.preventDefault()
+                    var i;
+                    var x = document.getElementsByClassName("gallery");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+
+               document.getElementById(galleryName).style.display = "block";
+                  /* Change style of buttons */
+                 var x = document.getElementsByClassName("active");
+                 for (i = 0; i < x.length; i++) {
+                   x[i].classList.remove("active");
+                 }
+
+                 document.getElementById(buttonName).classList.add("active");
+               }
           </script>
     </div>
 </main>

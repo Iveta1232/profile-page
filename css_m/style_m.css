@@ -140,16 +140,31 @@ main {
   height: 30px;
   margin: 25px 35px 49px 35px;
 }
-#studio .smallIcon {
+#buttomStudio .smallIcon {
   background: url("../images_m/1icon.png");
 }
-#studio:hover .smallIcon {
-  background: url("../images_m/hover.png");
+#buttomStudio:focus .smallIcon {
+  background: url("../images_m/hover1.png");
 }
-#work .smallIcon {
+#buttomStudio:hover .smallIcon {
+  background: url("../images_m/1icon.png");
+}
+#buttomWork .smallIcon {
   background: url("../images_m/2icon.png");
 }
-#favorite .smallIcon {
+#buttomWork:focus .smallIcon {
+  background: url("../images_m/hover2.png");
+}
+#buttomWork:hover .smallIcon {
+  background: url("../images_m/2icon.png");
+}
+#buttomFavorite .smallIcon {
+  background: url("../images_m/3icon.png");
+}
+#buttomFavorite:focus .smallIcon {
+  background: url("../images_m/hover3.png");
+}
+#buttomFavorite:hover .smallIcon {
   background: url("../images_m/3icon.png");
 }
 .studio-text {
@@ -158,15 +173,13 @@ main {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #555555;
   margin: -34px 29px 14px 29px;
 }
-#studio:hover .studio-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
+#buttomStudio:focus .studio-text {
+  color: #FFFFFF;
+}
+#buttomStudio:hover .studio-text {
   color: #555555;
 }
 .work-text {
@@ -178,6 +191,12 @@ main {
   color: #555555;
   margin: -34px 33px 14px 33px;
 }
+#buttomWork:focus .work-text {
+  color: #FFFFFF;
+}
+#buttomWork:hover .work-text {
+  color: #555555;
+}
 .favorite-text {
   font-family: Roboto;
   font-style: normal;
@@ -186,6 +205,12 @@ main {
   line-height: 14px;
   color: #555555;
   margin: -34px 23px 14px 23px;
+}
+#buttomFavorite:focus .favorite-text {
+  color: #FFFFFF;
+}
+#buttomFavorite:hover .favorite-text {
+  color: #555555;
 }
 #photos {
 width: 378px;
